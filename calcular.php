@@ -23,6 +23,7 @@ $objTaller2->setNotataller2($notaTaller2);
 $objCuestionario1->setNotacuestionario1($notaCuestionario1);
 $objCuestionario2->setNotacuestionario2($notaCuestionario2);
 $objProyectofinal->setNotaproyectofinal($notaProyectofinal);
+$fecha = date('d-m-Y');
 
 echo "Nota promedio del taller #1: " . $objTaller1->calcularTaller1(0.20);
 echo "<br>Nota promedio del taller #2: " . $objTaller2->calcularTaller2(0.15);
@@ -47,5 +48,6 @@ echo "<br><b>Nota definitiva: </b>" . $notaDefinitiva = $objTaller1->calcularTal
     if($notaDefinitiva>5){
         echo "<br><b>Error crítico: </b>La nota definitiva excede el limite establecido <b>(5)</b>.";
     } 
+echo "<br><b>Fecha en la que se hizo el calculo: </b>".$fecha;
 }
 ?>
